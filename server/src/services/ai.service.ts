@@ -86,7 +86,7 @@ Return ONLY a valid JSON object (no markdown, no code fences) with the following
   try {
     const chatCompletion = await groq.chat.completions.create({
       messages: [{ role: "user", content: prompt }],
-      model: "llama-3.3-70b-versatile",
+      model: "openai/gpt-oss-120b",
       temperature: 0.2,
       response_format: { type: "json_object" }
     });
@@ -158,7 +158,7 @@ IMPORTANT: The test case inputs and outputs must be precise and unambiguous. Eac
   try {
     const chatCompletion = await groq.chat.completions.create({
       messages: [{ role: "user", content: prompt }],
-      model: "llama-3.3-70b-versatile",
+      model: "openai/gpt-oss-120b",
       temperature: 0.7,
       response_format: { type: "json_object" }
     });
@@ -276,7 +276,7 @@ Return ONLY a valid JSON object with these fields:
   try {
     const chatCompletion = await groq.chat.completions.create({
       messages: [{ role: "user", content: prompt }],
-      model: "llama-3.3-70b-versatile",
+      model: "openai/gpt-oss-120b",
       temperature: 0.1,
       response_format: { type: "json_object" }
     });
@@ -402,7 +402,7 @@ Based on the above data, return ONLY a valid JSON object (no markdown) with thes
   try {
     const chatCompletion = await groq.chat.completions.create({
       messages: [{ role: "user", content: prompt }],
-      model: "llama-3.3-70b-versatile",
+      model: "openai/gpt-oss-120b",
       temperature: 0.2,
       response_format: { type: "json_object" }
     });
